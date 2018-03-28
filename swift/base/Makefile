@@ -5,16 +5,13 @@
 ###############################################
 
 build:
-	docker-compose run app go env
+	docker-compose run app swiftc
 
 run:
-	docker-compose run app go run main.go
+	docker-compose run app swift main.swift
 
 test:
-	docker-compose run app go test -v ./...
-
-ver:
-	docker-compose run app go version
+	docker-compose run app swift test -v ./...
 
 start:
 	docker-compose up

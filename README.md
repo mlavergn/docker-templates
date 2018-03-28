@@ -9,4 +9,5 @@ Bare bones Docker templates for languages and stacks. All templates contain a ma
 
 ## Current templates
 
-- Golang
+- Golang 1.10
+- Swift 4.0.3

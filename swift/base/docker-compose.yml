@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  app:
+    image: swiftdocker/swift:latest
+    volumes:
+      - .:/swift/src/demo
+    working_dir: /swift/src/demo
+    command: swift run main.swift
