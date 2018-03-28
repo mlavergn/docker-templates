@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  app:
+    image: golang:1.10-alpine
+    volumes:
+      - .:/go/src/demo
+    working_dir: /go/src/demo
+    command: go run main.go
