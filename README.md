@@ -11,3 +11,5 @@ Bare bones Docker templates for languages and stacks. All templates contain a ma
 
 - Golang 1.10
 - Swift 4.0.3
+- Golang Web 1.10
+- Postgres

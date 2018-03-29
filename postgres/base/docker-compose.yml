@@ -1,0 +1,16 @@
+version: "2"
+
+services:
+  db:
+    # image: golang:1.10-alpine
+    image: postgres:latest
+    volumes:
+      - /tmp/pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    command: postgres
+    environment:
+      - DB_USER=
+      - DB_PASS=
+      - DB_NAME=
+      - DB_TEMPLATE=
