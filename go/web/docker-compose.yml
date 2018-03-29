@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+  web:
+    image: golang:1.10-alpine
+    volumes:
+      - .:/go/src/demo
+    ports:
+      - "8000:8000"
+    working_dir: /go/src/demo
+    command: go run main.go
