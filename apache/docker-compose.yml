@@ -1,0 +1,15 @@
+version: "3"
+services:
+  app:
+    container_name: docker-apache
+    image: docker-apache:latest
+    ports:
+      - "80:8080"
+      - "443:8443"
+    domainname: localhost
+    hostname: app
+    volumes:
+      - ./certs:/opt/bitnami/apache/certs
+      - ./vhosts:/bitname/apache/conf/vhosts
+    build: .
+
