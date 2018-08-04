@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  app:
+    image: jupyter/scipy-notebook
+    ports:
+      - 8888:8888
+    volumes:
+      - .:/home
+    working_dir: /home
