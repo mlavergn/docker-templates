@@ -10,6 +10,6 @@ services:
     hostname: app
     volumes:
       - ./certs:/opt/bitnami/apache/certs
-      - ./vhosts:/bitname/apache/conf/vhosts
+      - ./vhosts:/bitnami/apache/conf/vhosts
     build: .
 
