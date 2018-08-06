@@ -4,6 +4,9 @@
 #
 ###############################################
 
+compose:
+	docker-compose build web
+
 build:
 	docker-compose run web go env
 

@@ -1,8 +1,11 @@
-version: "2"
+version: "3"
 
 services:
   web:
-    image: golang:1.10-alpine
+    image: docker-go-web:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     volumes:
       - .:/go/src/demo
     ports:

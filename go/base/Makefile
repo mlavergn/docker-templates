@@ -4,6 +4,9 @@
 #
 ###############################################
 
+compose:
+	docker-compose build app
+
 build:
 	docker-compose run app go env
 

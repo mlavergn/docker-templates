@@ -4,6 +4,9 @@
 #
 ###############################################
 
+compose:
+	docker-compose build db
+
 build:
 	docker-compose run db
 

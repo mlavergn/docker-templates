@@ -1,8 +1,12 @@
-version: "2"
+version: "3"
 
 services:
   app:
-    image: swiftdocker/swift:latest
+    container_name: docker-swift
+    image: docker-swift:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     volumes:
       - .:/swift/src/demo
     working_dir: /swift/src/demo
