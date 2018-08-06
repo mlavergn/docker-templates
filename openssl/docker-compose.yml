@@ -2,7 +2,9 @@ version: "3"
 services:
   app:
     container_name: docker-openssl
-    image: docker-openssl:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "443:443"
     domainname: localhost
